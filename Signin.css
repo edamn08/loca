@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    background-image: linear-gradient(to bottom right, grey, black);
+    height: auto;
+    
+  }
+  body{
+    margin: 0;
+    height:auto;
+  }
+  .logo{
+    opacity: 1.0;
+    transition: 0.2s;
+    top: -5px;
+    padding-right: 15000px;
+    padding: 0;
+    margin: 0;
+  }
+  .logo:hover{
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+  .title{
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    top: 12px;
+    left: 110px;
+    font-weight: lighter;
+    font-size: 40px;
+    color: white;
+    cursor: default;
+  }
+  nav{
+    background-color: rgb(0, 0, 0);
+    padding: 15px 5px 10px 25px;
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.356) ;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    text-align: center;
+    
+    
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;;
+    color: white;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+    bottom: 30px;
+  }
+  nav a:hover{
+    transition: 0.2s;
+    color: rgba(255, 255, 255, 0.356);
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .dropbtn {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;;
+    color: white;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 22px;
+    display: inline-block;
+    bottom: 30px;
+    color: white;
+    border: none;
+    background: none;
+    margin-left: 75px;
+    cursor: pointer;
+    padding-bottom: 30px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    align-items: left;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;;
+    color: white;
+    margin: 0 15px;
+    text-align: left;
+    font-size: 20px;
+    bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(12px);
+  }
+
+.dropdown:hover{
+  background-color: rgb(0, 0, 0);
+  backdrop-filter: blur(12px);
+}
+.dropbtn:hover{
+  transition: 0.2s;
+  color: rgba(255, 255, 255, 0.356);
+}
+
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+  i{
+    color: white;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  .menu{
+    bottom: 5px;
+  }
+.login-box{
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    height: 75vh;
+    padding: 30px;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;;
+    background-color: #0c0c0c3a;
+    border-radius: 15%;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.search {
+    position: relative;
+    display: flex;
+    float:right;
+    border: 0;
+    outline: none;
+     bottom: 27px;
+     right: 10px;
+     box-shadow: none;
+     outline: none;
+  }
+  .searchTerm{
+    border: 0;
+    outline: none;
+    width: 250px;
+    height: 33px;
+   font-family: "Roboto", sans-serif;
+   font-weight: 100;
+   font-style: normal;
+   box-shadow: none;
+   outline: none;
+  }
+  .searchButton{
+background-color: #000;
+width: 50px;
+height: 33px;
+text-align: center;
+color: #fff;
+border: none;
+cursor: pointer;
+font-size: 20px;
+box-shadow: none;
+outline: none;
+
+  }
+  .ri-search-line{
+    color: #ffffff;
+  }
+
+.login-header{
+    text-align: center;
+    margin: 20px 0 40px 0;
+    
+}
+.login-header header{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.input-box .input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+    outline: none;
+    transition: .3s;
+}
+::placeholder{
+    font-weight: 500;
+    color: #222;
+}
+.input-field:focus{
+    width: 102%;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+.fg:hover{
+    color: #2f59b4;
+}
+section{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+}
+#check{
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color: white;
+}
+.input-submit{
+    position: relative;
+}
+.submit-btn{
+    width: 100%;
+    height: 60px;
+    background: #000000b2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-submit label{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #ffffff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background: #000;
+    transform: scale(1.05,1);
+    
+}
+.sign-up-link{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a{
+    color: #ffffff;
+    font-weight: 600;
+}
+.sign-up-link a:hover{
+    color: #2f59b4;
+    font-weight: 600;
+}
+.social-and-email {
+  display: inline; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+   width: 100%;
+  padding-left: 10px;
+  font-family: "Roboto mono", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  padding-top: 10px;
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.76);
+  justify-content: space-between;
+  z-index: 999;
+}
+h4{
+  margin: 0;
+}
+hr{
+  border: 0;
+  height: 1px;
+  background-color: white;
+  width: 7%;
+  float: left;
+  margin-top: 5px;
+  padding-top: 0;
+  margin-bottom: 10px;
+}
+.social-links a{
+display: inline-flex;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin:0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  padding-top: 0;
+  float: left;
+  
+}
+.social-links a:hover{
+color: #24262b;
+opacity: 0.6;
+}
+
+.emailb{
+font-family: "Roboto mono", sans-serif;
+font-weight: 500;
+font-style: normal;
+color: white;
+font-size: 1em;
+padding: 1em;
+width: 240px;
+border-radius: 5px;
+background-color: rgba(255,255,255,0.2);
+outline: none;
+border: none;
+cursor: pointer;
+top: 0;
+text-align: center; 
+float: right;
+transition: all 0.5s ease;
+margin-top: -20px;
+margin-right: 25px;
+}
+.emailb:hover{
+background-color: #24262b;
+}
+.content{
+    height: 120vh;
+  }
